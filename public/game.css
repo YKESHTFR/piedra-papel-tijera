@@ -1,32 +1,80 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #dbeafe, #fef9c3);
+  margin: 0;
+  padding: 0;
 }
 
 .game-container {
   max-width: 600px;
-  margin: auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.game-container:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #1e3a8a;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .choices button {
-  margin: 0.5rem;
-  padding: 1rem 2rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.choices button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
 }
 
 .results {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.results h2 {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+#player-choice,
+#pc-choice {
+  font-size: 1.8rem;
 }
 
 .scoreboard {
   margin-top: 2rem;
   font-size: 1.2rem;
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #1f2937;
+}
+
+.scoreboard p {
+  margin: 0.5rem 0;
 }
