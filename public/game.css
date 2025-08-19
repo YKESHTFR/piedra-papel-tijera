@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.choices button {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.scoreboard {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
