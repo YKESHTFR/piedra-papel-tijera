@@ -1,6 +1,6 @@
 type Choice = 'piedra' | 'papel' | 'tijera' | 'lagarto' | 'spock';
 
-const choices: Choice[] = ['piedra', 'papel', 'tijera'];
+const choices: Choice[] = ['piedra', 'papel', 'tijera', 'lagarto', "spock"];
 
 const playerChoiceDisplay = document.getElementById('player-choice')!;
 const pcChoiceDisplay = document.getElementById('pc-choice')!;
